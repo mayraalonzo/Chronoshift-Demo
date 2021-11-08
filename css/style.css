@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Zen+Antique+Soft&display=swap');
+
+* { 
+    box-sizing: border-box;
+}
+body {
+    background: whitesmoke;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Zen Antique Soft', serif;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 1rem 0 1rem;
+    padding: 0.5rem;
+    border: solid 1px darkgrey;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    margin-top:0;
+    margin-bottom: 0.5em;
+}
+
+header {
+    position: sticky;
+    top:0;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.33);
+    z-index: 999;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header nav ul li a {
+    font-size: 24px;
+    padding: 1em;
+    background: black;
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color ease 200ms, background ease 200ms ;
+
+}
+
+header nav ul li a.active {
+    color: dodgerblue;
+}
+
+header nav ul li a:hover {
+    background: dodgerblue;
+    color: yellow;
+}
+
+#footer-nav {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+#footer-nav a {
+    text-decoration: none;
+    color: darkslateblue;
+}
+
+#footer-nav a:hover {
+    color: yellow;
+}
+
+#hero {
+    height: 80vh;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-image: url("https://via.placeholder.com/1920x800");
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body:not(#home) #hero {
+    height: 30vh;
+}
+
+body:not(#home) #hero h1 {
+    font-size: 3rem;
+}
+
+#home #hero {
+      background-image: url(../img/hero-home.png);
+}
+
+#about #hero {
+    background-image: url(../img/552997.jpg);
+    background-position-y: bottom;
+}
+
+#expeditions #hero {
+    background-image: url(../img/hero-expeditions.png);
+    background-position-y: bottom;
+}
+
+#policies #hero {
+    background-image: url(../img/hero-policies.png);
+    background-position-y: top;
+}
+
+#book #hero {
+    background-image: url(../img/hero-booknow.png);
+}
+
+#hero article {
+    width: 40vw;
+    padding: 2em;
+    color: whitesmoke;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 1rem 0 1rem;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.33);
+}
+
+#hero h1 {
+    color: whitesmoke;
+    text-shadow: 0 2px 3px rgba(0,0,0,0.25);
+}
+
+footer {
+    min-height: 30vh;
+    background-color: darkgrey;
+    margin-top: 2em;
+    padding: 1rem 0;
+}
+
+footer section:last-child {
+    justify-content: flex-end;
+}
+
+footer h4 {
+    color:white;
+    text-shadow: 0 2px 3px rgba(0,0,0,0.33);
+}
+
+footer input {
+    padding: 1rem;
+    border-radius: 1rem 0 0;
+}
+
+footer input[type="button"] {
+    padding: 1rem;
+    border-radius: 0 0 1rem;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    transition: color ease 200ms, background ease 200ms;
+}
+
+footer input[type="button"]:hover {
+    background-color: darkslateblue;
+    color: yellow;
+    cursor: pointer;
+}
+
+.button {
+    background-color: dodgerblue;
+    border-radius: 0.33em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.5em 1em;
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.33);
+    transition: color ease 200ms, background ease 200ms;
+}
+
+.button:hover {
+    color: yellow;
+    background: royalblue;
+}
+
+.row {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.row.full {
+    width: 100vw;
+}
+
+.quarters article {
+    width: 23%;
+}
+
+.thirds article {
+    width: 30%;
+}
+
+.twothirds article:first-child {
+    width: 64%;
+}
+
+.twothirds article:last-child {
+    width: 32%;
+}
+
+.halves article {
+    width: 48%;
+}
+
+.cards article,
+.card {
+    box-shadow: 0 3px 5px rgba(0,0,0,0.33);
+    border: solid 1px darkgrey;
+    background-color: white;
+    border-radius: 1rem 0 1rem;
+}
+
+.cards article img,
+.card img {
+    border-radius: 1rem 0 0 0;
+    border: none;
+}
+
+.cards article h2,
+.cards article h3,
+.cards article p,
+.card h2,
+.card h3,
+.card p {
+    padding: 0 1rem;
+    
+}
+
+.cards article a,
+.card a {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    float: right;
+}
+
+.cards .button,
+.card .button {
+    border-radius: 1rem 0 1rem ;
+}
+
+p.price {
+    color: darkslateblue;
+}
+
+p.price:before {
+    content:"$"
+}
+
+.underline {
+    border-bottom: 1px solid darkgrey;
+    width:100%
+}
+
+form input,
+form select {
+    padding: 1rem;
+    font-size: 1.25rem;
+    border-radius: 1rem 0 1rem;
+    border-color: darkslategray;
+    margin-bottom: 0.5rem;
+    background-color: white;
+    transition: color ease 200ms, background ease 200ms;
+}
+
+form select {
+    background-color: white;
+}
+
+form input[type="submit"]:hover {
+    background-color: darkslateblue;
+    color: yellow;
+}
+
+form input:focus {
+    box-shadow: 0 2px 3px rgba(0,0,0,0.25);
+    border-color: darkslateblue;
+}
